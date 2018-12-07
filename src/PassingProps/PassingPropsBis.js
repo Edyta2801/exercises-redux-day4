@@ -1,16 +1,14 @@
 import React from 'react'
-
-const PassingPropsBis = (props) => (
+ const PassingPropsBis = (props) => (
   <div>
     <h4>
-      {}
+      {props.passingValue}
     </h4>
     <button
-      onClick={}
+      onClick={props.passingFun}
     >
       Click
     </button>
   </div>
 )
-
-export default PassingPropsBis
+ export default PassingPropsBis 

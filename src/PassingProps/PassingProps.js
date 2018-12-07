@@ -8,10 +8,14 @@
 //      w PassingProps sprawdź czy komponent je otrzymał (użyj narzędzi Reactowych w Chrome). 
 
 import React from 'react'
+import PassingPropsPrim from './PassingPropsPrim'
 
 const PassingProps = (props) => (
   <div>
-    
+    <PassingPropsPrim
+      passingValue={props.passingValue}
+      passingFun={props.passingFun}
+    />
   </div>
 )
 

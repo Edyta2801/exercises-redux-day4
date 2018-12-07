@@ -1,8 +1,7 @@
 
 import React from 'react'
 import PassingPropsBis from './PassingPropsBis'
-
-const PassingPropsPrim = (props) => (
+ const PassingPropsPrim = (props) => (
   <div>
     <PassingPropsBis 
       passingValue={props.passingValue}
@@ -10,5 +9,4 @@ const PassingPropsPrim = (props) => (
     />
   </div>
 )
-
-export default PassingPropsPrim
+ export default PassingPropsPrim 
