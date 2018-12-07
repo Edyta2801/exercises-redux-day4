@@ -8,13 +8,17 @@ const App = (props) => (
   <div>
     <Router>
       <div>
+        <Link to={'/'}>Home</Link>
+        <Link to={'/counter'}>Counter</Link>
+        <Link to={'/counter-with-start-value'}>Counter 15</Link>
+        <Link to={'/passing-props'}>Passing Props</Link>
         <Route path='/' exact component={Counter} />
         <Route path='/counter' component={Counter} />
+        <Route path='/counter-with-start-value' component={
+          () => <Counter startValue={15} />
+        } />
         {/* PassingProps component with no props */}
         <Route path='/passing-props' component={PassingProps} />
-        <Route path='/counter-with-start-value' component={() =>
-          <Counter startValue={15} />}
-        />
       </div>
     </Router>
   </div>
