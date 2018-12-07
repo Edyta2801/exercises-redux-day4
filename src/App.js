@@ -12,6 +12,9 @@ const App = (props) => (
         <Route path='/counter' component={Counter} />
         {/* PassingProps component with no props */}
         <Route path='/passing-props' component={PassingProps} />
+        <Route path='/counter-with-start-value' component={() =>
+          <Counter startValue={15} />}
+        />
       </div>
     </Router>
   </div>
