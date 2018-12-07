@@ -4,7 +4,7 @@ import Counter from './Counter'
 const App = (props) => (
   <div>
     <Counter
-      startValue={3}
+      startValue={'dupa'}
     />
 
     <Counter />

@@ -28,5 +28,8 @@ class Counter extends React.Component {
 Counter.defaultProps = {
   startValue: 3
 }
+Counter.propTypes.Types={
+    startValue:PropTypes.number.isRequired
+}
 
 export default Counter
