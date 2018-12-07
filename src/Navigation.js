@@ -1,9 +1,12 @@
+
 import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Drawer from 'material-ui/Drawer'
 import AppBar from 'material-ui/AppBar'
 import { ListItem } from 'material-ui/List'
+
+import { routes } from './routes'
 
 class Navigation extends React.Component {
   state = {
@@ -37,10 +40,11 @@ class Navigation extends React.Component {
           open={this.state.isDrawerOpen}
           onRequestChange={this.toggleDrawer}
         >
-          <MenuLink to={'/'} label="Home" />
-          <MenuLink to={'/counter'} label="Counter" />
-          <MenuLink to={'/counter-with-start-value'} label="Counter 15" />
-          <MenuLink to={'/passing-props'} label="Passing Props" />
+        {
+          routes.map(route => (
+            <MenuLink to={route.path} label={route.label} />
+          ))
+        }
         </Drawer>
       </div>
     )
