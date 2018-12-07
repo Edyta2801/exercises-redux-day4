@@ -1,7 +1,10 @@
 import React from 'react'
- import Counter from './Counter'
+
+import Counter from './Counter'
 import PassingProps from './PassingProps'
- export const routes = [
+import FetchUsers from './FetchUsers'
+
+export const routes = [
   {
     component: Counter,
     exact: true,
@@ -33,4 +36,10 @@ import PassingProps from './PassingProps'
     label: 'Counter 101',
     key: '56789'
   },
-] 
+  {
+    component: FetchUsers,
+    path: '/fetch-users',
+    label: 'Fetch Users',
+    key: '67890'
+  },
+]
