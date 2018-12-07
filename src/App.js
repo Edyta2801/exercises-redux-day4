@@ -9,6 +9,10 @@ const App = (props) => (
 
     <Counter
    />
+   <PassingProps
+      passingValue={5}
+      passingFun={() => alert('bu')}
+    />
   </div>
 )
 
