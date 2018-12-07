@@ -4,10 +4,11 @@ import Counter from './Counter'
 const App = (props) => (
   <div>
     <Counter
-      startValue={'dupa'}
+      startValue={0}
     />
 
-    <Counter />
+    <Counter
+   />
   </div>
 )
 
