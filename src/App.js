@@ -5,7 +5,9 @@ class App extends Component {
   render() {
     return (
       <div >
-        Counter
+        <Counter
+          startValue={3}
+        />
       </div>
     );
   }

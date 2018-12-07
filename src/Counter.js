@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 
@@ -8,7 +9,9 @@ class Counter extends React.Component {
     //     this.state={}
     // }
 
-    state = {}
+    state = {
+        number:this.props.startValue
+    }
 
     render() {
         this.render(
@@ -18,12 +21,12 @@ class Counter extends React.Component {
                 </h1>
                 <button
                     // setState przyjmuje obiekt, ale może przyjmuje też funkcję
-                    onClick={() => this.setState({number:this.state.number +1})}
+                    onClick={() => this.setState({ number: this.state.number + 1 })}
                 >
                     +
                 </button>
                 <button
-                    onClick={() => this.setState({number:this.state.number +1})}
+                    onClick={() => this.setState({ number: this.state.number + 1 })}
                 >
                     -
             </button>
@@ -32,5 +35,7 @@ class Counter extends React.Component {
 
 
     }
+    Counter.defaultProps = { startValue: 3 }
+
 }
 export default Counter
